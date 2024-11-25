@@ -1,0 +1,11 @@
+/* nav bar */
+.navbar-brand {
+  /* TODO: Change the font family to GeomGraphicW03-SemiBold */
+  font-family: Roboto;  
+  margin-left: 20px;
+}
+
+.navbar-nav {
+  font-family: Poppins;
+  margin-right: 20px;
+}
