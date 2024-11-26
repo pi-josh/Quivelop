@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/img/QUIVELOP_logo-v2.png"
+    />
 
     <!-- bootstrap -->
     <link
@@ -16,14 +21,14 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar">
+    <nav class="navbar sticky-top">
       <div class="nav-container">
         <div class="title-container">
           <h3>Quivelop</h3>
         </div>
         <div class="nav-links-container">
           <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#guide">Guide</a></li>
           </ul>
@@ -51,11 +56,25 @@
         </div>
       </div>
     </div>
+    <div class="center">
+      <div class="nickname-container center">
+        <form id="nickname-form" class="nickname-form poppins" action="/submit">
+          <input type="text" name="nickname" id="nickname" placeholder="Enter your Nickname"
+          onfocus="this.placeholder=''" 
+          onblur="this.placeholder='Enter your nickname'"/>
+        </form>
+      </div>
+    </div>
 
     <!-- About Page -->
+    <div id="about"></div>
     <div class="about-page">
-      <div id="about"></div>
       <div class="about-container">
+        <div class="center">
+          <div class="start-container center">
+            <button type="submit" form="nickname-form" id="submit">I'm ready to take the quiz</submit>
+        </div>
+        </div>
         <div class="about-content-container">
           <div class="about-head-desc-container">
             <div class="about-heading-container">
@@ -94,7 +113,7 @@
     <div class="guide-page">
       <div id="guide"></div>
       <div class="guide-container">
-        <div class="guide-content-container">
+        <div id="guide" class="guide-content-container">
           <div class="guide-heading-container">
             <h4 class="guide-heading">
               <span class="span-heading-black poppins">Guide</span>
@@ -115,6 +134,12 @@
         </div>
       </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="text-center bg-dark text-light py-3">
+      <p>© dev7 - Quivelop [2024]. All rights reserved.</p>
+    </footer>
+
     <script src="./scripts/script.js"></script>
     <!-- bootstrap script -->
     <script

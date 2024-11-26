@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "GeomGraphic";
+  src: url(/assets/Geom-Graphic-W03-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,13 +16,20 @@ body {
   line-height: 1.6;
 }
 
+/* Centering a div */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Font family */
 .poppins {
   font-family: Poppins;
 }
 
 .geomgraphic {
-  font-family: GeomGraphicW03-SemiBold, Roboto;
+  font-family: "GeomGraphic";
 }
 
 /* Font colors */
@@ -32,13 +46,13 @@ body {
 }
 
 /* Navbar */
-nav {
+.navbar {
   position: sticky;
   top: 0;
   z-index: 1000;
-  font-display: flex;
   justify-content: center;
   width: 100%;
+  background-color: white;
 }
 
 .nav-container {
@@ -46,12 +60,13 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 50px 100px;
+  padding: 25px 100px;
+  width: 100%;
 }
 
 .title-container > h3 {
   color: #000;
-  font-family: Roboto; /* TODO: Change font to GeomGraphicW03-SemiBold */
+  font-family: "GeomGraphic";
   font-size: 48px;
   font-style: normal;
   font-weight: 600;
@@ -87,11 +102,9 @@ nav {
   color: #675b5b;
 }
 
-
 /* Home Page */
 .home-container {
   width: 100%;
-  height: 900px;
 }
 
 .span-heading-black {
@@ -119,21 +132,71 @@ nav {
   line-height: normal;
 }
 
-.front-logo-container, .subheading-container {
+.front-logo-container,
+.subheading-container,
+.start-container {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.start-container,
+.nickname-container {
+  width: 900px;
+  height: 150px;
+  background: #f8a0cc;
+}
+
+.nickname-container {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding-top: 30px;
+}
+
+.start-container {
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding-bottom: 30px;
+}
+
+#nickname,
+#submit {
+  width: 600px;
+  height: 70px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #fff;
+  color: #ffb8dc;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  outline-width: 0;
+  outline-style: none;
+  border: none;
+}
+
+#submit {
+  background: #ec70af;
+}
+
+#submit:hover {
+  background: #e0405c;
+  color: #fff;
+}
+
+::placeholder {
+  color: #ffb8dc;
+}
+
 /* About Page */
 .about-container {
   width: 100%;
-  height: 900px;
-  background: #FCE154;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 835px;
+  background: #fce154;
 }
 
 .sidelook-left-logo {
@@ -146,44 +209,39 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid black; /* TO BE REMOVED */
 }
 
 .about-heading-container {
   width: 550px;
-  height: 60px;
-  border: 3px solid blue; /* TO BE REMOVED */
+  padding: 15px 0px;
+  margin: 50px;
 }
 .about-description-container {
   width: 550px;
-  height: 360px;
-  border: 3px solid red; /* TO BE REMOVED */
+  font-size: 20px;
+  margin-top: 35px;
 }
 
 .sidelook-left-container {
-  border: 3px solid green; /* TO BE REMOVED */
+  margin-top: 100px;
+  margin-left: 35px;
 }
-
 
 /* Guide Page */
 .guide-container {
   width: 100%;
-  height: 900px;
+  height: 835px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .guide-img-container {
-  width: 975px;
-  height: 500px;
+  width: 900px;
+  height: 450px;
   border-radius: 30px;
-  border: 20px solid #B2E2FE;
-  background: #40B5E0 50%;
-}
-
-.guide-content-container {
-  border: 3px solid black; /* TO BE REMOVED */
+  border: 20px solid #b2e2fe;
+  background: #40b5e0 50%;
 }
 
 .guide-heading-container {
@@ -191,23 +249,26 @@ nav {
   justify-content: center;
   align-items: center;
   height: 60px;
-  border: 3px solid blue; /* TO BE REMOVED */
 }
 
 .guide-description-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid red; /* TO BE REMOVED */
+  margin: 15px 0px;
 }
 
 .guide-img-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid green; /* TO BE REMOVED */
 }
 
-.guide-description, .guide-heading {
+.guide-description,
+.guide-heading {
+  margin-bottom: 0px;
+}
+
+footer > p {
   margin-bottom: 0px;
 }
