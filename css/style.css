@@ -1,11 +1,213 @@
-/* nav bar */
-.navbar-brand {
-  /* TODO: Change the font family to GeomGraphicW03-SemiBold */
-  font-family: Roboto;  
-  margin-left: 20px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.navbar-nav {
+body {
+  min-height: 2000px;
+  line-height: 1.6;
+}
+
+/* Font family */
+.poppins {
   font-family: Poppins;
-  margin-right: 20px;
+}
+
+.geomgraphic {
+  font-family: GeomGraphicW03-SemiBold, Roboto;
+}
+
+/* Font colors */
+.red-text {
+  color: #e0405c;
+}
+
+.yellow-text {
+  color: #f8a840;
+}
+
+.pink-text {
+  color: #f8a0cc;
+}
+
+/* Navbar */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 100px;
+}
+
+.title-container > h3 {
+  color: #000;
+  font-family: Roboto; /* TODO: Change font to GeomGraphicW03-SemiBold */
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 0px;
+}
+
+.nav-links-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 100px;
+  margin-bottom: 0px;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+  color: #675b5b;
+}
+
+
+/* Home Page */
+.home-container {
+  width: 100%;
+  height: 900px;
+}
+
+.span-heading-black {
+  color: #000;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.span-heading-red {
+  color: #e0405c;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.span-heading-yellow {
+  color: #f8a840;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.front-logo-container, .subheading-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* About Page */
+.about-container {
+  width: 100%;
+  height: 900px;
+  background: #FCE154;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidelook-left-logo {
+  width: 380px;
+  height: 380px;
+  flex-shrink: 0;
+}
+
+.about-content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black; /* TO BE REMOVED */
+}
+
+.about-heading-container {
+  width: 550px;
+  height: 60px;
+  border: 3px solid blue; /* TO BE REMOVED */
+}
+.about-description-container {
+  width: 550px;
+  height: 360px;
+  border: 3px solid red; /* TO BE REMOVED */
+}
+
+.sidelook-left-container {
+  border: 3px solid green; /* TO BE REMOVED */
+}
+
+
+/* Guide Page */
+.guide-container {
+  width: 100%;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.guide-img-container {
+  width: 975px;
+  height: 500px;
+  border-radius: 30px;
+  border: 20px solid #B2E2FE;
+  background: #40B5E0 50%;
+}
+
+.guide-content-container {
+  border: 3px solid black; /* TO BE REMOVED */
+}
+
+.guide-heading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  border: 3px solid blue; /* TO BE REMOVED */
+}
+
+.guide-description-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid red; /* TO BE REMOVED */
+}
+
+.guide-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid green; /* TO BE REMOVED */
+}
+
+.guide-description, .guide-heading {
+  margin-bottom: 0px;
 }
