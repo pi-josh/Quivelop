@@ -12,10 +12,10 @@
 }
 
 body {
-  min-height: 2000px;
   line-height: 1.6;
 }
 
+/* LANDING PAGE */
 /* Centering a div */
 .center {
   display: flex;
@@ -43,6 +43,32 @@ body {
 
 .pink-text {
   color: #f8a0cc;
+}
+
+/* Text Span */
+.span-heading-black {
+  color: #000;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.span-heading-red {
+  color: #e0405c;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.span-heading-yellow {
+  color: #f8a840;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 /* Navbar */
@@ -105,31 +131,6 @@ body {
 /* Home Page */
 .home-container {
   width: 100%;
-}
-
-.span-heading-black {
-  color: #000;
-  text-align: center;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
-.span-heading-red {
-  color: #e0405c;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-
-.span-heading-yellow {
-  color: #f8a840;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
 }
 
 .front-logo-container,
@@ -269,6 +270,7 @@ body {
   margin-bottom: 0px;
 }
 
+/* Footer */
 footer > p {
   margin-bottom: 0px;
 }
