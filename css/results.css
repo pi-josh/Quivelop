@@ -136,9 +136,21 @@ body {
 }
 
 .sidelook-left-logo {
-    width: 400px;
-    height: 370px;
-    flex-shrink: 0;
+  width: 400px;
+  height: 370px;
+  flex-shrink: 0;
+}
+
+.user-text-container {
+  border: 3px solid green;
+}
+
+.score-container {
+  border: 3px solid blue;
+}
+
+.sidelook-left-container {
+  border: 3px solid red;
 }
 
 /* Answer Key Page */
@@ -146,6 +158,49 @@ body {
   width: 100%;
   height: 820px;
   background: #f8a0cc;
+}
+
+.correct-container,
+.wrong-container {
+  font-family: Poppins;
+}
+
+.answer-key-container {
+  border: 3px solid black;
+}
+
+.correct-container {
+  border: 3px solid green;
+}
+
+.wrong-container {
+  border: 3px solid red;
+}
+
+.see-answer-container {
+  border: 3px solid blue;
+}
+
+#answer-key {
+  width: 600px;
+  height: 70px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #ec70af;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  outline-width: 0;
+  outline-style: none;
+  border: none;
+}
+
+#answer-key:hover {
+  background: #e0405c;
 }
 
 /* Footer */
