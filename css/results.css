@@ -194,6 +194,25 @@ body {
   background: #f8a0cc;
 }
 
+.correct-text,
+.wrong-text {
+  color: #fffbfb;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.correct-icon,
+.wrong-icon {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 63px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 .correct-container,
 .wrong-container {
   font-family: Poppins;
@@ -219,7 +238,7 @@ body {
   width: 600px;
   height: 70px;
   flex-shrink: 0;
-  border-radius: 20px;
+  border-radius: 15px;
   background: #ec70af;
   color: #fff;
   text-align: center;
