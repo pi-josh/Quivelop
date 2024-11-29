@@ -131,26 +131,60 @@ body {
 /* Score Page */
 .score-page-container {
   width: 100%;
-  height: 820px;
-  border: 3px solid black;
+  padding: 65px 0px;
 }
 
 .sidelook-left-logo {
-  width: 400px;
-  height: 370px;
+  width: 500px;
+  height: 500px;
   flex-shrink: 0;
 }
 
-.user-text-container {
-  border: 3px solid green;
+.user-text {
+  color: #000;
+  font-family: Poppins;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.score-border-container {
+  width: 500px;
+  height: 380px;
+  background: #b2e2fe;
+  border-radius: 30px;
+  border: 20px solid #b2e2fe;
 }
 
 .score-container {
-  border: 3px solid blue;
+  width: 450px;
+  height: 320px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: #40b5e0 50%;
 }
 
-.sidelook-left-container {
-  border: 3px solid red;
+.score-text {
+  color: #fff;
+  font-family: GeomGraphic;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.score-number {
+  color: #fff;
+  font-family: GeomGraphic;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.score-logo-container {
+  gap: 100px;
 }
 
 /* Answer Key Page */
