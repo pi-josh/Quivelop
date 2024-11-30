@@ -126,7 +126,7 @@ body {
   z-index: 2;
 }
 
-/* Hover Effect for Main Rectangle */
+/* Hover Effect for Main Rectangle
 .main-rectangle:hover ~ .small-rectangles-container,
 .main-rectangle:hover ~ .next-button-container,
 .main-rectangle:hover ~ .nickname-container,
@@ -134,7 +134,7 @@ body {
   filter: blur(3px);
   transition: filter 0.3s ease;
   cursor: pointer;
-}
+} */
 
 .small-rectangles-container {
   display: flex;
@@ -152,10 +152,14 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   cursor: pointer;
+  font-family: Poppins;
+  color: #FFFFFF;
+  font-size: 30px;
 }
 
 #first-choice {
   background-color: #ec70af;
+  
 }
 
 #second-choice {
@@ -180,11 +184,11 @@ body {
   transition: transform 0.3s ease;
   z-index: 1;
 }
-/* Blurred effect on non-hovered buttons */
+/* Blurred effect on non-hovered buttons
 .small-rectangles-container:hover .small-rectangle:not(:hover) {
   filter: blur(3px);
   transition: filter 0.3s ease;
-}
+} */
 
 .next-button {
   padding: 10px 30px;
@@ -206,3 +210,42 @@ body {
   color: #1e1e1e;
   background-color: white;
 }
+
+
+footer{
+    background-color: #020202;
+    padding: 10px;  
+}
+
+
+footer p {
+    margin-top: 15px;
+    color: #fff;
+    margin-right: 170px;
+    text-align: right;
+    font-size: 20px;
+    font-family: 'Chivo Mono', monospace;
+}
+
+#counter{
+    font-size: 24px;
+    font-family: Poppins;
+    color: #FFFFFF; 
+    text-align: right;
+    justify-content: right;
+    margin-top: -120px;
+    margin-right: -115px;
+    z-index: 1000;
+}
+
+/* Question Quiz */
+#question-quiz {
+  font-size: 32px;
+  color: #FFFFFF;
+  font-family: Poppins;
+}
+
+.question-container {
+  margin-top: 50px;
+}
+
