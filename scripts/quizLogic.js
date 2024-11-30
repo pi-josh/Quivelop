@@ -35,24 +35,31 @@ document.addEventListener('DOMContentLoaded', function () {
             `;
             document.body.appendChild(dialogOverlay);
 
-            // Event Listener for Exit Button
+            // Show dialog on Exit button click
             exitButton.addEventListener('click', () => {
-                dialogOverlay.style.display = 'flex';
-                document.body.classList.add('dialog-active');
+                dialogOverlay.style.display = 'flex'; // Ensure it's visible
+                setTimeout(() => {
+                    dialogOverlay.classList.add('show'); // Add the 'show' class to trigger the entrance animation
+                }, 10); // Slight delay to ensure styles apply
             });
 
-            // Event Listener for Confirm Button
+            // Handle Confirm button
             dialogOverlay.querySelector('.confirm').addEventListener('click', () => {
-                dialogOverlay.style.display = 'none';
-                document.body.classList.remove('dialog-active');
-                window.location.href = '../index.html'; // Redirect to index
+                dialogOverlay.classList.remove('show'); // Remove the 'show' class
+                setTimeout(() => {
+                    dialogOverlay.style.display = 'none'; // Hide after animation
+                }, 200); // Match the transition duration
+                window.location.href = '../index.html'; // Redirect to the homepage
             });
 
-            // Event Listener for Cancel Button
+            // Handle Cancel button
             dialogOverlay.querySelector('.cancel').addEventListener('click', () => {
-                dialogOverlay.style.display = 'none';
-                document.body.classList.remove('dialog-active');
+                dialogOverlay.classList.remove('show'); // Remove the 'show' class
+                setTimeout(() => {
+                    dialogOverlay.style.display = 'none'; // Hide after animation
+                }, 400); // Match the transition duration
             });
+
 
             // Event Listener for Close Button (X)
             dialogOverlay.querySelector('.dialog-btn-close').addEventListener('click', () => {

@@ -11,7 +11,20 @@
   backdrop-filter: blur(5px); /* Blur effect */
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
   z-index: 1000; /* Ensure it's above other content */
+}
+
+
+.dialog-overlay.show {
+    opacity: 1; /* Fade-in background overlay */
+}
+
+/* Dialog box active state */
+.dialog-overlay.show .dialog-box {
+  transform: scale(1); /* Slide down to its position */
+  opacity: 1; /* Fade in */
 }
 
 /* Dialog box container */
@@ -25,6 +38,10 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
   position: relative; /* For the close button positioning */
+  /* transform: translateY(-100%); Move out of the viewport initially */
+  transform: scale(0.8);
+  opacity: 0; /* Invisible initially */
+  transition: transform 0.4s ease-out, opacity 0.4s ease-out; /* Smooth animation for slide and fade-in */
 }
 
 /* Dialog title */
@@ -53,7 +70,7 @@
 }
 
 .dialog-btn {
-  padding: 15px ;
+  padding: 15px;
   font-size: 20px;
   border: none;
   border-radius: 15px;
@@ -62,16 +79,15 @@
 }
 
 .dialog-btn.confirm {
-  background-color: #E0405C; /* Green for confirm */
+  background-color: #e0405c; /* Green for confirm */
   color: white;
   width: 133px;
 }
 
 .dialog-btn.cancel {
-    background-color: #F8A840; /* Red for cancel */
-    color: white;
-    width: 108px;
-
+  background-color: #f8a840; /* Red for cancel */
+  color: white;
+  width: 108px;
 }
 
 /* Close button (X) */
