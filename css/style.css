@@ -63,6 +63,19 @@ body {
   line-height: normal;
 }
 
+.span-heading-red.poppins {
+  margin-left: -7px;
+}
+
+.span-heading-yellow.geomgraphic {
+  margin-left: -7px;
+}
+
+.span-heading-black.poppins.epoint {
+  margin-left: -7px;
+}
+
+
 .span-heading-yellow {
   color: #f8a840;
   font-size: 40px;
