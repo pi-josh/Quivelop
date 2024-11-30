@@ -100,7 +100,7 @@ body {
   margin-bottom: 0px;
 }
 
-/* Score Page */
+/* Score Section */
 .score-page-container {
   width: 100%;
   padding: 65px 0px;
@@ -159,7 +159,7 @@ body {
   gap: 100px;
 }
 
-/* Answer Key Page */
+/* Answer Key Section */
 .answer-key-page-container {
   width: 100%;
   padding: 170px 0px;
@@ -247,8 +247,6 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  outline-width: 0;
-  outline-style: none;
   border: none;
 }
 

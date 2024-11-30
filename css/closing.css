@@ -1,0 +1,179 @@
+@font-face {
+  font-family: "GeomGraphic";
+  src: url(/assets/Geom-Graphic-W03-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+}
+
+/* CLOSING PAGE */
+/* Centering a div */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Font family */
+.poppins {
+  font-family: Poppins;
+}
+
+.geomgraphic {
+  font-family: "GeomGraphic";
+}
+
+/* Font colors */
+.red-text {
+  color: #e0405c;
+}
+
+.yellow-text {
+  color: #f8a840;
+}
+
+.pink-text {
+  color: #f8a0cc;
+}
+
+/* Text Span */
+.span-heading-black {
+  color: #000;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.span-heading-red {
+  color: #e0405c;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.span-heading-yellow {
+  color: #f8a840;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  justify-content: center;
+  width: 100%;
+  background-color: white;
+}
+
+.nav-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 100px;
+  width: 100%;
+}
+
+.title-container > h3 {
+  color: #000;
+  font-family: "GeomGraphic";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 0px;
+}
+
+/* Closing Section */
+.closing-page-container {
+  width: 100%;
+  padding: 65px 0px;
+}
+
+.down-logo {
+  width: 344px;
+  height: 344px;
+  flex-shrink: 0;
+}
+
+.greeting-text {
+  color: #000;
+  font-family: "Geomgraphic";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.again-text {
+  color: #000;
+  font-family: "Geomgraphic";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+#again-button,
+#exit-button {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 615px;
+  height: 80px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  border: none;
+}
+
+#again-button {
+  background: #f8a840;
+}
+
+#again-button:hover {
+    background: #e07f00;
+}
+
+#exit-button {
+  background: #e0405c;
+}
+
+#exit-button:hover {
+    background: #ba011f;
+}
+
+.buttons-container {
+    padding: 90px 0px;
+}
+
+.again-button-container {
+    margin-bottom: 30px;
+}
+
+.exit-button-container {
+    margin-top: 30px;
+}
+
+/* Footer */
+footer > p {
+  margin-bottom: 0px;
+}
