@@ -109,10 +109,10 @@ body {
   text-align: center;
 }
 #img-left {
-    position: relative;
-    margin-left: 1500px;
-    top: -120px !important; /* Adjust this value to move the image upwards */
-    z-index: 99;
+  position: relative;
+  margin-left: 1500px;
+  top: -120px !important; /* Adjust this value to move the image upwards */
+  z-index: 99;
 }
 
 .main-rectangle {
@@ -153,13 +153,12 @@ body {
   text-align: center;
   cursor: pointer;
   font-family: Poppins;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 30px;
 }
 
 #first-choice {
   background-color: #ec70af;
-  
 }
 
 #second-choice {
@@ -211,41 +210,51 @@ body {
   background-color: white;
 }
 
-
-footer{
-    background-color: #020202;
-    padding: 10px;  
+footer {
+  background-color: #020202;
+  padding: 10px;
 }
-
 
 footer p {
-    margin-top: 15px;
-    color: #fff;
-    margin-right: 170px;
-    text-align: right;
-    font-size: 20px;
-    font-family: 'Chivo Mono', monospace;
+  margin-top: 15px;
+  color: #fff;
+  margin-right: 170px;
+  text-align: right;
+  font-size: 20px;
+  font-family: "Chivo Mono", monospace;
 }
 
-#counter{
-    font-size: 24px;
-    font-family: Poppins;
-    color: #FFFFFF; 
-    text-align: right;
-    justify-content: right;
-    margin-top: -120px;
-    margin-right: -115px;
-    z-index: 1000;
+#counter {
+  font-size: 24px;
+  font-family: Poppins;
+  color: #ffffff;
+  text-align: right;
+  justify-content: right;
+  margin-top: -120px;
+  margin-right: -115px;
+  z-index: 1000;
 }
 
 /* Question Quiz */
 #question-quiz {
   font-size: 32px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: Poppins;
 }
 
 .question-container {
   margin-top: 50px;
 }
+/* Custom confirmation dialogue */
+.dialog-image {
+  width: 100%; /* Adjust to fit full width of dialog */
+  max-width: 150px; /* Restrict maximum size */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 15px; /* Space below the image */
+  display: block;
+  margin-left: auto;
+  margin-right: auto; /* Center the image */
+  border-radius: 5px; /* Optional: Add rounded corners */
+}
+
 
