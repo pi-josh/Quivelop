@@ -3,6 +3,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const nickname = localStorage.getItem('nickname');
     if (nickname) {
         // Display the nickname
-        document.getElementById('nickname-display').textContent = `Hello, ${nickname}!`;
+        document.getElementById('nickname-display').textContent = `${nickname}, show us what you got!`;
     }
 });

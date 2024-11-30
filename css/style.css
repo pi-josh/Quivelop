@@ -1,6 +1,6 @@
 @font-face {
   font-family: "GeomGraphic";
-  src: url(/assets/Geom-Graphic-W03-SemiBold.ttf) format("truetype");
+  src: url(../assets/Geom-Graphic-W03-SemiBold.ttf) format("truetype");
   font-weight: 600;
   font-style: normal;
 }
@@ -222,10 +222,18 @@ body {
 }
 
 #submit:hover {
-  background: #e0405c;
+  background: #ee1b6c;
   color: #fff;
 }
 
+#submit:active {
+  background: #ee052c;
+  color: #fff;
+}
+
+#nickname {
+  color: #e91e83;
+}
 ::placeholder {
   color: #ffb8dc;
 }

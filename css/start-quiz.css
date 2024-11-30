@@ -1,0 +1,208 @@
+@font-face {
+  font-family: "GeomGraphic";
+  src: url(../assets/Geom-Graphic-W03-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+}
+
+/* Display for the container */
+.nickname-container {
+  text-align: left;
+  margin-left: 125px;
+  padding-top: 25px;
+}
+
+#nickname-display {
+  font-size: 24px;
+  color: #1e1e1e;
+}
+
+/* Font family */
+.poppins {
+  font-family: Poppins;
+}
+
+.geomgraphic {
+  font-family: "GeomGraphic";
+}
+
+/* Font colors */
+.red-text {
+  color: #e0405c;
+}
+
+.yellow-text {
+  color: #f8a840;
+}
+
+.pink-text {
+  color: #f8a0cc;
+}
+
+/* Text Span */
+.span-heading-black {
+  color: #000;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.span-heading-red {
+  color: #e0405c;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.span-heading-yellow {
+  color: #f8a840;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  justify-content: center;
+  width: 100%;
+  background-color: white;
+}
+
+.nav-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 100px;
+  width: 100%;
+}
+
+.title-container > h3 {
+  color: #000;
+  font-family: "GeomGraphic";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 0px;
+}
+
+/* Display for the main question */
+.center {
+  text-align: center;
+}
+#img-left {
+    position: relative;
+    margin-left: 1500px;
+    top: -120px !important; /* Adjust this value to move the image upwards */
+    z-index: 99;
+}
+
+.main-rectangle {
+  width: 80%;
+  margin: 20px auto;
+  padding: 145px;
+  background-color: #40b5e0;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 2;
+}
+
+/* Hover Effect for Main Rectangle */
+.main-rectangle:hover ~ .small-rectangles-container,
+.main-rectangle:hover ~ .next-button-container,
+.main-rectangle:hover ~ .nickname-container,
+.main-rectangle:hover ~ nav {
+  filter: blur(3px);
+  transition: filter 0.3s ease;
+  cursor: pointer;
+}
+
+.small-rectangles-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin: -150px 0 20px;
+}
+
+.small-rectangle {
+  width: 39%;
+  padding: 65px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+}
+
+#first-choice {
+  background-color: #ec70af;
+}
+
+#second-choice {
+  background-color: #40e068;
+}
+
+#third-choice {
+  background-color: #fce154;
+}
+
+#last-choice {
+  background-color: #f8a840;
+}
+
+.next-button-container {
+  margin: 20px auto;
+}
+/* Hover Effect */
+
+.small-rectangle:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+/* Blurred effect on non-hovered buttons */
+.small-rectangles-container:hover .small-rectangle:not(:hover) {
+  filter: blur(3px);
+  transition: filter 0.3s ease;
+}
+
+.next-button {
+  padding: 10px 30px;
+  margin-left: 1590px;
+  background-color: #40b5e0;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.next-button:hover {
+  background-color: #0056b3;
+}
+
+#btn-exit {
+  border: none;
+  color: #1e1e1e;
+  background-color: white;
+}
