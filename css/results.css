@@ -1,6 +1,6 @@
 @font-face {
   font-family: "GeomGraphic";
-  src: url(./assets/Geom-Graphic-W03-SemiBold.ttf) format("truetype");
+  src: url(/assets/Geom-Graphic-W03-SemiBold.ttf) format("truetype");
   font-weight: 600;
   font-style: normal;
 }
@@ -100,34 +100,6 @@ body {
   margin-bottom: 0px;
 }
 
-.nav-links-container {
-  display: flex;
-  align-items: center;
-}
-
-.navbar .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 100px;
-  margin-bottom: 0px;
-}
-
-.navbar .nav-links a {
-  text-decoration: none;
-  color: #000;
-  text-align: center;
-  font-family: Poppins;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  transition: color 0.3s ease;
-}
-
-.navbar .nav-links a:hover {
-  color: #675b5b;
-}
-
 /* Score Page */
 .score-page-container {
   width: 100%;
@@ -190,14 +162,34 @@ body {
 /* Answer Key Page */
 .answer-key-page-container {
   width: 100%;
-  height: 820px;
+  padding: 170px 0px;
   background: #f8a0cc;
+}
+
+.answer-result-container {
+  gap: 30px;
+}
+
+.correct-text-container {
+  width: 390px;
+  height: 150px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #40e068;
+}
+
+.wrong-text-container {
+  width: 390px;
+  height: 150px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #e0405c;
 }
 
 .correct-text,
 .wrong-text {
   color: #fffbfb;
-  font-size: 24px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -207,7 +199,7 @@ body {
 .wrong-icon {
   color: #fff;
   font-family: Poppins;
-  font-size: 63px;
+  font-size: 90px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -218,20 +210,28 @@ body {
   font-family: Poppins;
 }
 
-.answer-key-container {
-  border: 3px solid black;
+.correct-container, .wrong-container {
+  gap: 10px;
 }
 
-.correct-container {
-  border: 3px solid green;
+.correct-icon-container {
+  width: 150px;
+  height: 150px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #40e068;
 }
 
-.wrong-container {
-  border: 3px solid red;
+.wrong-icon-container {
+  width: 150px;
+  height: 150px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #e0405c;
 }
 
 .see-answer-container {
-  border: 3px solid blue;
+  margin-top: 150px;
 }
 
 #answer-key {
@@ -243,7 +243,7 @@ body {
   color: #fff;
   text-align: center;
   font-family: Poppins;
-  font-size: 24px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
