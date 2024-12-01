@@ -65,12 +65,13 @@
 .dialog-buttons {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  margin-top: 40px;
+  gap: 1px;
+  margin-top: 50px;
 }
 
 .dialog-btn {
-  padding: 15px;
+  padding: 10px;
+  margin-left: 25px;
   font-size: 20px;
   border: none;
   border-radius: 15px;
@@ -82,13 +83,30 @@
   background-color: #e0405c; /* Green for confirm */
   color: white;
   width: 133px;
+  height:  52px;
+}
+
+.dialog-btn.confirm:hover {
+  background-color: #ec082e; /* Darker green on hover */
+  transform: scale(1.15);
+  transition: transform 0.5s ease;
+  
 }
 
 .dialog-btn.cancel {
   background-color: #f8a840; /* Red for cancel */
   color: white;
   width: 108px;
+  height: 52px;
 }
+
+.dialog-btn.cancel:hover {
+  background-color: #fd9c00; /* Darker green on hover */
+  transform: scale(1.15);
+  transition: transform 0.5s ease;
+  
+}
+
 
 /* Close button (X) */
 .dialog-btn-close {

@@ -15,14 +15,6 @@ body {
   line-height: 1.6;
 }
 
-/* RESULTS PAGE */
-/* Centering a div */
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /* Font family */
 .poppins {
   font-family: Poppins;
@@ -30,45 +22,6 @@ body {
 
 .geomgraphic {
   font-family: "GeomGraphic";
-}
-
-/* Font colors */
-.red-text {
-  color: #e0405c;
-}
-
-.yellow-text {
-  color: #f8a840;
-}
-
-.pink-text {
-  color: #f8a0cc;
-}
-
-/* Text Span */
-.span-heading-black {
-  color: #000;
-  text-align: center;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
-.span-heading-red {
-  color: #e0405c;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-
-.span-heading-yellow {
-  color: #f8a840;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
 }
 
 /* Navbar */
@@ -100,55 +53,169 @@ body {
   margin-bottom: 0px;
 }
 
-.nav-links-container {
+.score-page-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.user-text.poppins {
+  font-size: 40px;
+}
+
+.score-row {
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+  gap: 100px; /* Adjust the gap between the score and the image */
+}
+
+.score-logo-container {
+  display: flex;
+  width: 496px;
+  height: 373px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #b2e2fe; /* Background color for the rectangles */
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.score-logo-container-inside {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  width: 445px;
+  height: 316px;
+  align-items: center;
+  background-color: #40b5e0; /* Background color for the rectangles */
+  padding: 10px;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.score-text.geomgraphic {
+  font-size: 40px;
+  margin-top: 90px;
+  color: #fff;
+}
+
+.score-number.geomgraphic {
+  font-size: 64px;
+  color: #fff;
+}
+
+.sidelook-left-container {
   display: flex;
   align-items: center;
-}
-
-.navbar .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 100px;
-  margin-bottom: 0px;
-}
-
-.navbar .nav-links a {
-  text-decoration: none;
-  color: #000;
-  text-align: center;
-  font-family: Poppins;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  transition: color 0.3s ease;
-}
-
-.navbar .nav-links a:hover {
-  color: #675b5b;
-}
-
-/* Score Page */
-.score-page-container {
-  width: 100%;
-  height: 820px;
-  border: 3px solid black;
+  justify-content: center;
 }
 
 .sidelook-left-logo {
-    width: 400px;
-    height: 370px;
-    flex-shrink: 0;
+  width: 460x;
+  height: 370px;
 }
 
-/* Answer Key Page */
-.answer-key-page-container {
-  width: 100%;
-  height: 820px;
-  background: #f8a0cc;
+/* Get the correct answer */
+.percent-container {
+  background-color: #f8a0cc;
+  padding: 90px;
 }
 
-/* Footer */
-footer > p {
-  margin-bottom: 0px;
+.sub-rectangles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px; /* Adjust the gap between the rectangles */
+  margin-top: -20px;
+}
+
+.check-rectangle-container,
+.wrong-rectangle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.check-rectangle,
+.wrong-rectangle {
+  background-color: #40e068;
+  width: 150px;
+  height: 156px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check-rectangle  {
+  font-size: 90px;
+  color: white;
+  font-weight: bold;
+}
+
+.correct-percentage {
+  background-color: #40e068;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.wrong-rectangle {
+  background-color: #e04040;
+}
+
+.correct-percentage,
+.wrong-percentage {
+  width: 350px;
+  height: 156px;
+  border-radius: 10px;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  padding-left: 25px;
+  font-size: 24px;
+  flex-direction: column;
+  padding-top: 19px;
+  color: #fff;
+}
+
+.correct-answer,
+.percentage-correct,
+.wrong-percentage {
+  font-family: Poppins;
+  font-size: 40px;
+  color: #fff;
+}
+
+.wrong-rectangle {
+  font-size: 90px;
+  color: white;
+  font-weight: bold;
+}
+
+.wrong-percentage {
+  background-color: #e04040;
+}
+
+.see-btn-container {
+  text-align: center;
+  justify-content: center;
+  margin-top: 40px;
+  margin-left: 100px;
+}
+
+.see-btn {
+  padding: 10px 180px;
+  font-size: 40px;  
+  font-family: Poppins;
+  background-color: #EC70AF;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.see-btn:hover {
+  background-color: #f30079;
 }

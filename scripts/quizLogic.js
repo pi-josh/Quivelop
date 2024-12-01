@@ -63,8 +63,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Event Listener for Close Button (X)
             dialogOverlay.querySelector('.dialog-btn-close').addEventListener('click', () => {
-                dialogOverlay.style.display = 'none';
-                document.body.classList.remove('dialog-active');
+                dialogOverlay.classList.remove('show');
+                setTimeout(() => {
+                    dialogOverlay.style.display = 'none'; // Hide after animation
+                }, 400); // Match the transition duration
             });
 
             // Load First Question
@@ -98,7 +100,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     currentQuestionIndex++;
                     loadQuestion();
                 } else {
-                    alert(`Quiz finished! Your score is ${score}/${questions.length}`);
+                    localStorage.setItem('score', score);
+                   window.location.href = '../pages/results.html'; 
                 }
             });
 
