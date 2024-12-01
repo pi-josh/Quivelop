@@ -99,6 +99,8 @@ body {
   font-size: 40px;
   margin-top: 90px;
   color: #fff;
+  font-family: "GeomGraphic";
+  font-weight: bold;
 }
 
 .score-number.geomgraphic {
@@ -160,7 +162,6 @@ body {
 
 .correct-percentage {
   background-color: #40e068;
-  font-family: 'Times New Roman', Times, serif;
 }
 
 .wrong-rectangle {
@@ -186,6 +187,7 @@ body {
 .percentage-correct,
 .wrong-percentage {
   font-family: Poppins;
+  font-weight: bold;
   font-size: 40px;
   color: #fff;
 }
