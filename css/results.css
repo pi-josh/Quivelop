@@ -104,6 +104,7 @@ body {
 .score-number.geomgraphic {
   font-size: 64px;
   color: #fff;
+  font-weight: bold;
 }
 
 .sidelook-left-container {
