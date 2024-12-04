@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "GeomGraphic";
+  src: url("../assets/Geom-Graphic-W03-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+}
+
+.answers-log-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.result-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.result-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.result-item p {
+  margin-bottom: 5px;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}
+
+.log-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+}
+
+.log-item.correct {
+  border-left: 5px solid #28a745;
+}
+
+.log-item.incorrect {
+  border-left: 5px solid #dc3545;
+}
+
+.question-number {
+  font-weight: bold;
+}
+
+.question-text {
+  margin-top: 10px;
+}
+
+.user-answer,
+.correct-answer,
+.result {
+  margin-top: 5px;
+}
+
+.total-score {
+  font-size: 18px;
+  font-weight: bold;
+}
