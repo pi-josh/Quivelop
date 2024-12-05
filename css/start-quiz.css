@@ -1,6 +1,6 @@
 @font-face {
   font-family: "GeomGraphic";
-  src: url('../assets/Geom-Graphic-W03-SemiBold.ttf') format("truetype");
+  src: url("../assets/Geom-Graphic-W03-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
@@ -114,11 +114,12 @@ body {
   top: -120px !important; /* Adjust this value to move the image upwards */
   z-index: 99;
 }
-
+/* Questions */
 .main-rectangle {
-  width: 80%;
+  width: 81%;
   margin: 20px auto;
-  padding: 145px;
+  margin-top: 150px;
+  height: 250px;
   background-color: #40b5e0;
   border-radius: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -126,15 +127,9 @@ body {
   z-index: 2;
 }
 
-/* Hover Effect for Main Rectangle
-.main-rectangle:hover ~ .small-rectangles-container,
-.main-rectangle:hover ~ .next-button-container,
-.main-rectangle:hover ~ .nickname-container,
-.main-rectangle:hover ~ nav {
-  filter: blur(3px);
-  transition: filter 0.3s ease;
-  cursor: pointer;
-} */
+
+
+/* choices  */
 
 .small-rectangles-container {
   display: flex;
@@ -145,8 +140,8 @@ body {
 }
 
 .small-rectangle {
-  width: 39%;
-  padding: 65px;
+  width: 40%;
+  height: 155px;
   border-radius: 30px;
   border: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -154,7 +149,7 @@ body {
   cursor: pointer;
   font-family: Poppins;
   color: #ffffff;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 #first-choice {
@@ -167,15 +162,13 @@ body {
 
 #third-choice {
   background-color: #fce154;
+  color: #000000; /* High contrast text color */
 }
 
 #last-choice {
   background-color: #f8a840;
 }
 
-.next-button-container {
-  margin: 20px auto;
-}
 /* Hover Effect */
 
 .small-rectangle:hover {
@@ -183,15 +176,18 @@ body {
   transition: transform 0.3s ease;
   z-index: 1;
 }
-/* Blurred effect on non-hovered buttons
-.small-rectangles-container:hover .small-rectangle:not(:hover) {
-  filter: blur(3px);
-  transition: filter 0.3s ease;
-} */
 
-.next-button {
+.button-container {
+  margin: 20px;
+  justify-content: right;
+  margin-right: 150px;
+  display: flex;
+  gap: 1350px;
+}
+.next-button,
+.previous-button,
+.submit-button {
   padding: 10px 30px;
-  margin-left: 1590px;
   background-color: #40b5e0;
   color: white;
   border: none;
@@ -200,10 +196,13 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.next-button:hover {
+.next-button:hover,
+.previous-button:hover,
+.submit-button:hover {
   background-color: #0056b3;
 }
 
+/* Exit Button */
 #btn-exit {
   border: none;
   color: #1e1e1e;
@@ -212,13 +211,14 @@ body {
 
 footer {
   background-color: #020202;
-  padding: 10px;
+  width: 100%;
+  height: 60px;
 }
 
 footer p {
-  margin-top: 15px;
   color: #fff;
-  margin-right: 170px;
+  padding-top: 5px;
+  margin-right: 200px;
   text-align: right;
   font-size: 20px;
   font-family: "Chivo Mono", monospace;
@@ -227,17 +227,19 @@ footer p {
 #counter {
   font-size: 24px;
   font-family: Poppins;
-  color: #ffffff;
+  color: #fff;
   text-align: right;
   justify-content: right;
-  margin-top: -120px;
-  margin-right: -115px;
+  margin-top: -100px;
+  padding-top: 10px;
+  margin-right: 30px;
   z-index: 1000;
 }
 
 /* Question Quiz */
 #question-quiz {
-  font-size: 32px;
+  font-size: 30px;
+  margin-top: 50px;
   color: #ffffff;
   font-family: Poppins;
 }
@@ -256,5 +258,3 @@ footer p {
   margin-right: auto; /* Center the image */
   border-radius: 5px; /* Optional: Add rounded corners */
 }
-
-
