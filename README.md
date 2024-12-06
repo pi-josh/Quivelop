@@ -69,4 +69,4 @@ The Quiz Application comprises 20 multiple-choice questions designed to provide 
 2. Start the quiz by selecting your answers to the questions displayed.
 3. Proceed to the next question by clicking the "Next" button.
 4. At the end of the quiz, view your total score and the correct answers.
-5. Retake the quiz by clicking the "Restart" button.
+5. Retake the quiz by clicking the "Try Again" button.
