@@ -25,7 +25,7 @@ A web-based quiz application that quizzes users on various topics. Users can ans
 To develop an interactive web-based quiz application that engages users with multiple-choice questions, calculates their scores, and enhances group collaboration and technical skills in HTML, CSS, and JavaScript.
 
 - **Assigned Date**: Nov. 14 at 12:00am
-- **Due Date**: Dec. 14 at 11:59pm
+- **Due Date**: Dec. 7 at 11:59pm
 
 ## Features
 
