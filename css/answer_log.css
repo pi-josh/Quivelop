@@ -13,7 +13,6 @@
 
 body {
   line-height: 1.6;
-  font-family: "Poppins", sans-serif;
 }
 
 /* Title  */
@@ -22,34 +21,50 @@ body {
   top: 0;
 }
 
+.container {
+  margin-top: 35px;
+}
 .navbar h3 {
   font-size: 48px;
   font-family: "GeomGraphic";
   color: #ffffff;
 }
 
-.green-color {
-  background-color: #40e068;
+#nickname-display {
+  font-size: 48px;
+  margin-left: 50px;
+  font-family: "GeomGraphic";
+  color: #ffffff;
 }
 
-.rounded-rectangle {
-  background-color: #f0f0f0; /* Background color for the rectangle */
-  border-radius: 15px; /* Rounded corners */
-  padding: 20px; /* Padding inside the rectangle */
-  display: inline-block; /* Ensure the rectangle wraps around the image */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for depth */
-  position: relative; /* Ensure the image is positioned within the rectangle */
+#quest-log {
+  font-size: 32px;
+  font-family: "Poppins";
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+.green-color {
+  background-color: #40e068;
+  padding: 10px;
 }
 
 .rounded-rectangle img {
   display: block; /* Ensure the image is centered within the rectangle */
-  margin: 0 auto; /* Center the image horizontally */
-}
-.rounded-corners {
-  color: #000000;
-  border-radius: 10px;
+  margin-left: 50px;
 }
 
+.rounded-rectangle {
+  margin-top: 50px;
+}
+
+#quest-log {
+  margin-left: 100px;
+}
+/* Score */
+#final-score-display {
+  margin-left: 70px;
+  font-family: "Poppins";
+}
 .answers-log-container {
   padding: 20px;
   text-align: center;

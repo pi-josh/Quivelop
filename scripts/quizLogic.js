@@ -1,3 +1,4 @@
+//@ description: This file contains the logic for the quiz page. @deprecated
 // document.addEventListener('DOMContentLoaded', function () {
 //     fetch('../data/questions.json')
 //         .then(response => response.json())
