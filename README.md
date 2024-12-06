@@ -33,7 +33,7 @@ To develop an interactive web-based quiz application that engages users with mul
 - **Answer Selection**: Allow users to select an answer and proceed to the next question.
 - **Score Calculation**: Calculate the user's score based on correct answers.
 - **Results Page**: Display the user's score and correct answers at the end of the quiz.
-- **Restart Quiz**: Allow users to retake the quiz without refreshing the page.
+- **Restart Quiz**: Allow users to retake the quiz.
 
 ## Group Roles & Responsibilities
 
