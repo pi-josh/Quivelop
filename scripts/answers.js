@@ -52,12 +52,6 @@ document.addEventListener("DOMContentLoaded", function () {
     <p class="index">${index + 1}</p>
   `;
 
-    // Adjust text color if the background is yellow
-    if (colorPattern[index % colorPattern.length] === "#FCE154") {
-      questionContainer.querySelector(".question").style.color = "black";
-      indexContainer.querySelector(".index").style.color = "black";
-    }
-
     // Append question and index containers to the big box
     bigBoxContainer.appendChild(questionContainer);
     bigBoxContainer.appendChild(indexContainer);
