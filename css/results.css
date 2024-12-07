@@ -1,6 +1,6 @@
 @font-face {
   font-family: "GeomGraphic";
-  src: url(/assets/Geom-Graphic-W03-SemiBold.ttf) format("truetype");
+  src: url('../assets/Geom-Graphic-W03-SemiBold.ttf') format("truetype");
   font-weight: 600;
   font-style: normal;
 }
@@ -234,7 +234,7 @@ body {
   margin-top: 150px;
 }
 
-#answer-key {
+.answer-key {
   width: 600px;
   height: 70px;
   flex-shrink: 0;
@@ -250,11 +250,15 @@ body {
   border: none;
 }
 
-#answer-key:hover {
+.answer-key:hover {
   background: #e0405c;
 }
 
 /* Footer */
-footer > p {
+footer p {
+  color: #fff;
   margin-bottom: 0px;
+  padding-top: 5px;
+  font-size: 20px;
+  font-family: "Chivo Mono", monospace;
 }

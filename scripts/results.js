@@ -19,11 +19,11 @@ document.addEventListener('DOMContentLoaded', function () {
     let correct =  Number(score);
     let wrong = 20 - correct;
     let correctPercentage = parseFloat((correct / 20) * 100).toFixed(NaN);
-    let wrongPercentage = parseFloat(100).toFixed(NaN);
+    let wrongPercentage = parseFloat(wrong/ 20 * 100).toFixed(NaN); 
 
     // Display calculated values
-    correctAnswers.textContent = `${correct} Correct`;
-    wrongAnswers.textContent = `${wrong} Incorrect`;
+    correctAnswers.textContent = `${correct} CORRECT`;
+    wrongAnswers.textContent = `${wrong} INCORRECT`;
     correctPercent.textContent = `${correctPercentage}%`;
     wrongPercent.textContent = `${wrongPercentage}%`;
 
