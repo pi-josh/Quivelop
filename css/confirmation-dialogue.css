@@ -1,0 +1,155 @@
+/* Custom Dialog Overlay */
+/* Overlay to cover the entire screen */
+.dialog-overlay {
+  display: none; /* Initially hidden */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  backdrop-filter: blur(5px); /* Blur effect */
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+
+.dialog-overlay.show {
+    opacity: 1; /* Fade-in background overlay */
+}
+
+/* Dialog box active state */
+.dialog-overlay.show .dialog-box {
+  transform: scale(1); /* Slide down to its position */
+  opacity: 1; /* Fade in */
+}
+
+/* Dialog box container */
+.dialog-box {
+  background-color: #ec70af; /* White background for contrast */
+  border-radius: 20px;
+  width: 586px;
+  height: 543px;
+  max-width: 90%; /* Responsive design */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative; /* For the close button positioning */
+  /* transform: translateY(-100%); Move out of the viewport initially */
+  transform: scale(0.8);
+  opacity: 0; /* Invisible initially */
+  transition: transform 0.4s ease-out, opacity 0.4s ease-out; /* Smooth animation for slide and fade-in */
+}
+
+/* Dialog title */
+.dialog-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+  margin-right: 340px;
+}
+
+/* Dialog message */
+.dialog-message {
+  font-size: 20px;
+  font-family: Poppins;
+  margin-top: 40px;
+  color: #ffffff;
+}
+
+/* Dialog buttons */
+.dialog-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1px;
+  margin-top: 50px;
+}
+
+.dialog-btn {
+  padding: 10px;
+  margin-left: 25px;
+  font-size: 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-family: Poppins;
+}
+
+.dialog-btn.confirm {
+  background-color: #e0405c; /* Green for confirm */
+  color: white;
+  width: 133px;
+  height:  52px;
+}
+
+.dialog-btn.confirm:hover {
+  background-color: #ec082e; /* Darker green on hover */
+  transform: scale(1.15);
+  transition: transform 0.5s ease;
+  
+}
+
+.dialog-btn.cancel {
+  background-color: #f8a840; /* Red for cancel */
+  color: white;
+  width: 108px;
+  height: 52px;
+}
+
+.dialog-btn.cancel:hover {
+  background-color: #fd9c00; /* Darker green on hover */
+  transform: scale(1.15);
+  transition: transform 0.5s ease;
+  
+}
+
+
+/* Close button (X) */
+.dialog-btn-close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Dialog image styling */
+.dialog-image {
+  /* max-width: 100%; */
+  width: 200.7px;
+  height: 173px;
+  margin-left: 204px;
+}
+
+/* Blur the background when dialog is active */
+body.dialog-active {
+  overflow: hidden; /* Prevent scrolling */
+}
+
+body.dialog-active > *:not(.dialog-overlay) {
+  filter: blur(5px); /* Blur all other content */
+}
+.line-divider.one {
+  height: 1px; /* Thin line height */
+  background-color: #ccc; /* Light gray color */
+  width: 586px; /* Full width */
+  border: none; /* Removes any border */
+  margin-left: -20px;
+  margin-top: 40px;
+}
+
+.line-divider.two {
+  height: 1px; /* Thin line height */
+  background-color: #ccc; /* Light gray color */
+  width: 586px; /* Full width */
+  margin: 10px 0; /* Spacing above and below the divider */
+  border: none; /* Removes any border */
+  margin-left: -20px;
+}

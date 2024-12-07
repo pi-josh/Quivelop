@@ -1,0 +1,102 @@
+[
+    {
+        "question": "The influence of IT systems on business models is",
+        "choices": ["Decreasing", "Static", "Continuously Increasing", "Unpredictable"],
+        "correct": 2
+    },
+    {
+        "question": "Modern organizations often struggle with misalignment between departments and external parties. What is a major cause of this challenge?",
+        "choices": ["Rapid technological advancements", "Decentralized information systems", "Lack of skilled IT professionals", "Increasing cybersecurity threats"],
+        "correct": 1
+    },
+    {
+        "question": "Which is NOT a core Enterprise Architecture component?",
+        "choices": ["Business", "Information", "Security", "Technology"],
+        "correct": 2
+    },
+    {
+        "question": "Why are Information Security and Privacy important for data?",
+        "choices": ["To limit access", "To stop partnerships", "To protect data and follow rules", "To have one database"],
+        "correct": 2
+    },
+    {
+        "question": "Which of the following is NOT a characteristic of a project?",
+        "choices": ["It has a definite start and end point", "It often brings about change", "It is a recurring activity with no specific objectives", "It has allocated resources and budget"],
+        "correct": 2
+    },
+    {
+        "question": "What are the life cycle phases of project management as per PMBOK?",
+        "choices": ["Team management, stakeholder reviews, and deliverable creation", "Initiating, Planning, Executing, Monitoring & Controlling, and Closing", "Proposal writing, conflict management, and project reporting", "Planning, task scheduling, and stakeholder engagement"],
+        "correct": 1
+    },
+    {
+        "question": "Which skill is essential for a project manager to resolve disagreements within the team?",
+        "choices": ["Technical expertise", "Conflict management", "Strategic management", "Report writing"],
+        "correct": 1
+    },
+    {
+        "question": "Which skill is MOST critical for effectively leading a project team?",
+        "choices": ["Leadership", "Report Writing", "Technical Knowledge", "Quality Assurance"],
+        "correct": 0
+    },
+    {
+        "question": "What is the primary purpose of encryption for data at rest and in transit?",
+        "choices": ["Improve database performance", "Prevent data redundancy", "Protect sensitive information from unauthorized access", "Enable faster query execution"],
+        "correct": 2
+    },
+    {
+        "question": "What are the three important aspects of database handling?",
+        "choices": ["Security, Performance, Design", "Security, Availability, Quality", "Scalability, Accessibility, Efficiency", "Maintenance, Security, Compatibility"],
+        "correct": 1
+    },
+    {
+        "question": "Which technology ensures failover options if a primary database fails?",
+        "choices": ["Encryption", "Replication and clustering", "Query optimization", "Role-based access control"],
+        "correct": 1
+    },
+    {
+        "question": "Which SQL command is used to remove a table from the database?",
+        "choices": ["DELETE", "DROP", "REMOVE", "ALTER"],
+        "correct": 1
+    },
+    {
+        "question": "What does WWW mean?",
+        "choices": ["World Wild Web", "Word Wide Web", "World Wide Web", "Where Why Web"],
+        "correct": 2
+    },
+    {
+        "question": "Which of the following is the correct way of linking an External CSS?",
+        "choices": ["<link rel=\"stylesheet\" href=\"styles.css\">", "<link rel=\"script\" href=\"styles.css\">", "<li rel=\"stylesheet\" a=\"styles.css\">", "<link rel=\"stylesheet\" a=\"styles.css\">"],
+        "correct": 0
+    },
+    {
+        "question": "You want to insert your name in the 'namehere' ID from the html file. What is the correct code to make it happen?",
+        "choices": ["document.getElementById('Stelle') = 'namehere';", "document.getElementById('namehere') = 'Stelle';", "document.getElementById(namehere) = 'Stelle';", "document.getElementById('Stelle') = namehere;"],
+        "correct": 1
+    },
+    {
+        "question": "It loops through a block of code as long as the condition specified evaluates to true. What is this type of loop?",
+        "choices": ["do…while", "for", "while", "switch case"],
+        "correct": 2
+    },
+    {
+        "question": "It is a careful, systematic, patient study, and investigation in some field of knowledge, undertaken to establish facts or principles (Grinnell, 2008)",
+        "choices": ["Capstone", "Research", "Search", "Study"],
+        "correct": 1
+    },
+    {
+        "question": "A ______ is an exercise to find out the extent to which a project can be implemented and is also the elaboration of the applicability of the basic idea",
+        "choices": ["Thesis", "Feasibility Study", "Theory", "Research"],
+        "correct": 1
+    },
+    {
+        "question": "____ is a detailed theoretical elaboration of the basic ideas accompanied by evidence supporting the basic ideas as an independent entity",
+        "choices": ["Thesis", "Feasibility Study", "Theory", "Research"],
+        "correct": 0
+    },
+    {
+        "question": "Which of the following is false about citing sources?",
+        "choices": ["Citations are extremely helpful to anyone who wants to find out more about your ideas and where they came from", "Proper citations will keep you from taking the rap for someone else's bad ideas", "Citing sources weakens your work by lending outside to support your ideas", "Giving credit to the original author is the only way to use other people's work without plagiarizing"],
+        "correct": 2
+    }
+]
