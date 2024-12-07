@@ -1,0 +1,351 @@
+@font-face {
+  font-family: "GeomGraphic";
+  src: url("../assets/Geom-Graphic-W03-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+}
+
+/* Centering div */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Font family */
+.poppins {
+  font-family: Poppins;
+}
+
+.geomgraphic {
+  font-family: "GeomGraphic";
+}
+
+/* Font colors */
+.red-text {
+  color: #e0405c;
+}
+
+.yellow-text {
+  color: #f8a840;
+}
+
+.pink-text {
+  color: #f8a0cc;
+}
+
+/* Text Span */
+.span-heading-black {
+  color: #000;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.span-heading-red {
+  color: #e0405c;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.span-heading-yellow {
+  color: #f8a840;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  justify-content: center;
+  width: 100%;
+  background-color: white;
+}
+
+.nav-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 100px;
+  width: 100%;
+}
+
+.title-container > h3 {
+  color: #000;
+  font-family: "GeomGraphic";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 0px;
+}
+
+#btn-exit {
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+#nickname-display {
+  color: #1e1e1e;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 0px;
+}
+
+/* Display for the container */
+.nickname-container {
+  text-align: left;
+  margin-left: 175px;
+}
+
+#counter {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-top: 28px;
+  padding-right: 21px;
+  margin-bottom: 0px;
+}
+
+.counter-section-container {
+  position: absolute;
+  width: 100%;
+}
+
+.counter-container {
+  text-align: right;
+  justify-content: right;
+  flex: 1;
+}
+
+.question-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.question-text-container {
+  width: 839px;
+}
+
+.logo-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(20%, 38%);
+}
+
+/* Display for the main question */
+.center {
+  text-align: center;
+}
+
+/* Questions */
+.main-rectangle {
+  width: 1240px;
+  height: 340px;
+  position: relative;
+  flex-shrink: 0;
+  background-color: #40b5e0;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+}
+
+/* choices  */
+.small-rectangles-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.small-rectangle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 110px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+  font-family: Poppins;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.answer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 574px;
+  height: 100%;
+}
+
+#first-choice {
+  background-color: #ec70af;
+  color: #ffffff;
+  text-align: center;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+#second-choice {
+  background-color: #40e068;
+  color: #ffffff;
+  text-align: center;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+#third-choice {
+  background-color: #fce154;
+  color: #000000;
+  text-align: center;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+#last-choice {
+  background-color: #f8a840;
+  color: #ffffff;
+  text-align: center;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* Hover Effect */
+
+.small-rectangle:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.button-container {
+  position: relative;
+  margin-top: 37px;
+  margin-bottom: 125px;
+  justify-content: right;
+  display: flex;
+}
+.next-button,
+.previous-button,
+.submit-button {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  background-color: #40b5e0;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 108px;
+  height: 44px;
+  flex-shrink: 0;
+}
+
+.next-button,
+.submit-button {
+  position: absolute;
+  right: 95px;
+}
+
+.previous-button {
+  position: absolute;
+  left: 95px;
+}
+
+.next-button:hover,
+.previous-button:hover,
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Exit Button */
+#btn-exit {
+  border: none;
+  color: #1e1e1e;
+  background-color: white;
+}
+
+footer {
+  background-color: #020202;
+  width: 100%;
+  height: 60px;
+}
+
+footer p {
+  color: #fff;
+  margin-bottom: 0px;
+  padding-top: 5px;
+  font-size: 20px;
+  font-family: "Chivo Mono", monospace;
+}
+
+/* Question Quiz */
+#question-quiz {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* Custom confirmation dialogue */
+.dialog-image {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}

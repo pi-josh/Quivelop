@@ -1,0 +1,288 @@
+@font-face {
+  font-family: "GeomGraphic";
+  src: url("../assets/Geom-Graphic-W03-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+}
+
+/* Font family */
+.poppins {
+  font-family: Poppins;
+}
+
+.geomgraphic {
+  font-family: "GeomGraphic";
+}
+
+/* Centering div */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Title  */
+.navbar {
+  background: #40e068;
+  position: sticky;
+  top: 0;
+}
+
+.navbar-brand-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 100px;
+  width: 100%;
+}
+
+.navbar h3 {
+  font-size: 48px;
+  font-family: "GeomGraphic";
+  color: #ffffff;
+}
+
+.navbar h3:hover {
+  color: #ffffff;
+}
+
+#nickname-display {
+  font-size: 48px;
+  font-family: "GeomGraphic";
+  color: #ffffff;
+}
+
+#quest-log {
+  font-size: 32px;
+  font-family: "Poppins";
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+.green-color {
+  background-color: #40e068;
+  padding: 10px;
+}
+
+.rounded-rectangle img {
+  display: block;
+}
+
+.rounded-rectangle {
+  margin-top: 50px;
+}
+
+/* Score */
+#final-score-display {
+  margin-top: 100px;
+  margin-bottom: 60px;
+  font-family: "Poppins";
+}
+.answers-log-container {
+  padding: 20px;
+  text-align: center;
+}
+
+#quest-log {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.total-score {
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.result-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.result-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.result-item p {
+  margin-bottom: 5px;
+}
+
+.log-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+}
+
+.log-item.correct {
+  border-left: 5px solid #28a745;
+}
+
+.log-item.incorrect {
+  border-left: 5px solid #dc3545;
+}
+
+.question-number {
+  font-weight: bold;
+}
+
+.question-text {
+  margin-top: 10px;
+}
+
+.user-answer,
+.correct-answer,
+.result {
+  margin-top: 5px;
+}
+
+/* Answer Log Section */
+.answer-key-container {
+  gap: 35px;
+}
+
+.big-box-container {
+  position: relative;
+  width: 515px;
+  height: 210px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  background: #ec70af;
+}
+
+.question-container {
+  width: 370px;
+  height: 100px;
+  flex-shrink: 0;
+}
+
+.question {
+  margin-bottom: 0px;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.index-container {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.index {
+  margin-bottom: 0px;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.small-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 65px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #f1f1f1;
+  margin: 10px 0px;
+}
+
+.answer-container {
+  width: 570px;
+}
+
+.answer {
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 0px;
+}
+
+.correct {
+  border-radius: 20px;
+  opacity: 0.99;
+  background: #8cd79e;
+}
+
+.incorrect {
+  border-radius: 20px;
+  background: #feb2b2;
+}
+.horizontal-line-container {
+  width: 100%;
+  margin: 40px 0px;
+}
+
+.horizontal-line {
+  width: 1230px;
+  height: 3px;
+  background: rgba(0, 0, 0, 0.33);
+}
+
+.finish-button-container {
+  display: flex;
+  justify-content: right;
+  margin: 70px 0px;
+}
+
+#finish-button {
+  width: 140px;
+  height: 48px;
+  flex-shrink: 0;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 15px;
+  background: #e0405c;
+  border: none;
+}
+
+/* Footer */
+footer p {
+  color: #fff;
+  margin-bottom: 0px;
+  padding-top: 5px;
+  font-size: 20px;
+  font-family: "Chivo Mono", monospace;
+}
