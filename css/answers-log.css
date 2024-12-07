@@ -24,6 +24,13 @@ body {
   font-family: "GeomGraphic";
 }
 
+/* Centering div */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Title  */
 .navbar {
   background: #40e068;
@@ -52,7 +59,6 @@ body {
 
 #nickname-display {
   font-size: 48px;
-  margin-left: 50px;
   font-family: "GeomGraphic";
   color: #ffffff;
 }
@@ -70,19 +76,16 @@ body {
 
 .rounded-rectangle img {
   display: block;
-  margin-left: 50px;
 }
 
 .rounded-rectangle {
   margin-top: 50px;
 }
 
-#quest-log {
-  margin-left: 100px;
-}
 /* Score */
 #final-score-display {
-  margin-left: 70px;
+  margin-top: 100px;
+  margin-bottom: 60px;
   font-family: "Poppins";
 }
 .answers-log-container {
@@ -127,14 +130,6 @@ body {
   margin-bottom: 5px;
 }
 
-.correct {
-  color: green;
-}
-
-.incorrect {
-  color: red;
-}
-
 .log-item {
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -165,9 +160,122 @@ body {
   margin-top: 5px;
 }
 
-.total-score {
-  font-size: 18px;
-  font-weight: bold;
+/* Answer Log Section */
+.answer-key-container {
+  gap: 35px;
+}
+
+.big-box-container {
+  position: relative;
+  width: 515px;
+  height: 210px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  background: #ec70af;
+}
+
+.question-container {
+  width: 370px;
+  height: 100px;
+  flex-shrink: 0;
+}
+
+.question {
+  margin-bottom: 0px;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.index-container {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.index {
+  margin-bottom: 0px;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.small-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 65px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #f1f1f1;
+  margin: 10px 0px;
+}
+
+.answer-container {
+  width: 570px;
+}
+
+.answer {
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 0px;
+}
+
+.correct {
+  border-radius: 20px;
+  opacity: 0.99;
+  background: #8cd79e;
+}
+
+.incorrect {
+  border-radius: 20px;
+  background: #feb2b2;
+}
+.horizontal-line-container {
+  width: 100%;
+  margin: 40px 0px;
+}
+
+.horizontal-line {
+  width: 1230px;
+  height: 3px;
+  background: rgba(0, 0, 0, 0.33);
+}
+
+.finish-button-container {
+  display: flex;
+  justify-content: right;
+  margin: 70px 0px;
+}
+
+#finish-button {
+  width: 140px;
+  height: 48px;
+  flex-shrink: 0;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 15px;
+  background: #e0405c;
+  border: none;
 }
 
 /* Footer */

@@ -203,7 +203,7 @@ body {
   cursor: pointer;
   font-family: Poppins;
   color: #ffffff;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .answer-container {
@@ -216,7 +216,7 @@ body {
 
 #first-choice {
   background-color: #ec70af;
-  color: #000000;
+  color: #ffffff;
   text-align: center;
   font-family: Poppins;
   font-style: normal;
@@ -226,7 +226,7 @@ body {
 
 #second-choice {
   background-color: #40e068;
-  color: #000000;
+  color: #ffffff;
   text-align: center;
   font-family: Poppins;
   font-style: normal;
@@ -246,7 +246,7 @@ body {
 
 #last-choice {
   background-color: #f8a840;
-  color: #000000;
+  color: #ffffff;
   text-align: center;
   font-family: Poppins;
   font-style: normal;
