@@ -15,6 +15,14 @@ body {
   line-height: 1.6;
 }
 
+/* RESULTS PAGE */
+/* Centering a div */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Font family */
 .poppins {
   font-family: Poppins;
@@ -22,6 +30,45 @@ body {
 
 .geomgraphic {
   font-family: "GeomGraphic";
+}
+
+/* Font colors */
+.red-text {
+  color: #e0405c;
+}
+
+.yellow-text {
+  color: #f8a840;
+}
+
+.pink-text {
+  color: #f8a0cc;
+}
+
+/* Text Span */
+.span-heading-black {
+  color: #000;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.span-heading-red {
+  color: #e0405c;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.span-heading-yellow {
+  color: #f8a840;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 /* Navbar */
@@ -53,175 +100,165 @@ body {
   margin-bottom: 0px;
 }
 
+/* Score Section */
 .score-page-container {
-  text-align: center;
-  padding: 20px;
-}
-
-.user-text.poppins {
-  font-size: 40px;
-}
-
-.score-row {
-  display: flex;
-  margin-top: 50px;
-  align-items: center;
-  justify-content: center;
-  gap: 100px; /* Adjust the gap between the score and the image */
-}
-
-.score-logo-container {
-  display: flex;
-  width: 496px;
-  height: 373px;
-  flex-direction: column;
-  align-items: center;
-  background-color: #b2e2fe; /* Background color for the rectangles */
-  padding: 20px;
-  border-radius: 30px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.score-logo-container-inside {
-  display: flex;
-  flex-direction: column;
-  margin-top: 5px;
-  width: 445px;
-  height: 316px;
-  align-items: center;
-  background-color: #40b5e0; /* Background color for the rectangles */
-  padding: 10px;
-  border-radius: 30px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.score-text.geomgraphic {
-  font-size: 40px;
-  margin-top: 90px;
-  color: #fff;
-  font-family: "GeomGraphic";
-  font-weight: bold;
-}
-
-.score-number.geomgraphic {
-  font-size: 64px;
-  color: #fff;
-  font-weight: bold;
-  font-family: "GeomGraphic";
-}
-
-.sidelook-left-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  padding: 65px 0px;
 }
 
 .sidelook-left-logo {
-  width: 460x;
-  height: 370px;
+  width: 500px;
+  height: 500px;
+  flex-shrink: 0;
 }
 
-/* Get the correct answer */
-.percent-container {
-  background-color: #f8a0cc;
-  padding: 90px;
-}
-
-.sub-rectangles {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50px; /* Adjust the gap between the rectangles */
-  margin-top: -20px;
-}
-
-.check-rectangle-container,
-.wrong-rectangle-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
-.check-rectangle,
-.wrong-rectangle {
-  background-color: #40e068;
-  width: 150px;
-  height: 156px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.check-rectangle  {
-  font-size: 90px;
-  color: white;
-  font-weight: bold;
-}
-
-.correct-percentage {
-  background-color: #40e068;
-}
-
-.wrong-rectangle {
-  background-color: #e04040;
-}
-
-.correct-percentage,
-.wrong-percentage {
-  width: 350px;
-  height: 156px;
-  border-radius: 10px;
-  display: flex;
-  align-items: left;
-  justify-content: left;
-  padding-left: 25px;
-  font-size: 24px;
-  flex-direction: column;
-  padding-top: 19px;
-  color: #fff;
-}
-
-.correct-answer,
-.percentage-correct,
-.wrong-percentage {
+.user-text {
+  color: #000;
   font-family: Poppins;
-  font-weight: bold;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.score-border-container {
+  width: 500px;
+  height: 380px;
+  background: #b2e2fe;
+  border-radius: 30px;
+  border: 20px solid #b2e2fe;
+}
+
+.score-container {
+  width: 450px;
+  height: 320px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: #40b5e0 50%;
+}
+
+.score-text {
+  color: #fff;
+  font-family: GeomGraphic;
   font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.score-number {
   color: #fff;
+  font-family: GeomGraphic;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
-.wrong-rectangle {
-  font-size: 90px;
-  color: white;
-  font-weight: bold;
+.score-logo-container {
+  gap: 100px;
 }
 
-.wrong-percentage {
-  background-color: #e04040;
+/* Answer Key Section */
+.answer-key-page-container {
+  width: 100%;
+  padding: 170px 0px;
+  background: #f8a0cc;
 }
 
-.see-btn-container {
-  text-align: center;
-  justify-content: center;
-  margin-top: 40px;
-  margin-left: 100px;
+.answer-result-container {
+  gap: 30px;
 }
 
-.see-btn {
-  padding: 10px 180px;
-  font-size: 40px;  
+.correct-text-container {
+  width: 390px;
+  height: 150px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #40e068;
+}
+
+.wrong-text-container {
+  width: 390px;
+  height: 150px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #e0405c;
+}
+
+.correct-text,
+.wrong-text {
+  color: #fffbfb;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.correct-icon,
+.wrong-icon {
+  color: #fff;
   font-family: Poppins;
-  background-color: #EC70AF;
-  color: white;
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
-  font-weight: bolder;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
+.correct-container,
+.wrong-container {
+  font-family: Poppins;
+}
 
-.see-btn:hover {
-  background-color: #f30079;
+.correct-container, .wrong-container {
+  gap: 10px;
+}
+
+.correct-icon-container {
+  width: 150px;
+  height: 150px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #40e068;
+}
+
+.wrong-icon-container {
+  width: 150px;
+  height: 150px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #e0405c;
+}
+
+.see-answer-container {
+  margin-top: 150px;
+}
+
+.answer-key {
+  width: 600px;
+  height: 70px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #ec70af;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+}
+
+.answer-key:hover {
+  background: #e0405c;
+}
+
+/* Footer */
+footer p {
+  color: #fff;
+  margin-bottom: 0px;
+  padding-top: 5px;
+  font-size: 20px;
+  font-family: "Chivo Mono", monospace;
 }

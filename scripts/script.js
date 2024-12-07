@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // Store the nickname in the local storage
             localStorage.setItem('nickname', nickname);
             // Redirect to the quiz page
-            window.location.href = './pages/start-quiz.html';
+            window.location.href = './pages/questions.html';
         } else {
             alert('Please enter your nickname.');
         }
