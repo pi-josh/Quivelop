@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Display total score
   const scoreDisplay = document.getElementById('final-score-display');
   scoreDisplay.innerHTML = `
-    <h4 class="text-center">Your Total Score: ${score}/${questions.length}</h4>`;
+    <h4 class="text-center total-score">Total Score: ${score}/${questions.length}</h4>`;
 
   // Generate log items
   // TODO: Refactor this to use template strings
@@ -53,6 +53,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Finish button
   finishButton.addEventListener('click', function () {
-    window.location.href = '../pages/finish-page.html';
+    window.location.href = '../pages/closing.html';
   });
 });
